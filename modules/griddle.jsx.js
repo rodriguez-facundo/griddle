@@ -18,6 +18,7 @@ var _extends = Object.assign || function (target) {
 };
 
 var React = require('react');
+var createClass = require('create-react-class');
 var GridTable = require('./gridTable.jsx');
 var GridFilter = require('./gridFilter.jsx');
 var GridPagination = require('./gridPagination.jsx');
@@ -51,7 +52,7 @@ var _orderBy = require('lodash/orderBy');
 var _property = require('lodash/property');
 var _get = require('lodash/get');
 
-var Griddle = React.createClass({
+var Griddle = createClass({
     displayName: 'Griddle',
 
     statics: {
