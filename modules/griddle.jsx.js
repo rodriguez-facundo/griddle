@@ -18,6 +18,7 @@ var _extends = Object.assign || function (target) {
 };
 
 var React = require('react');
+var PropTypes = require('prop-types');
 var createClass = require('create-react-class');
 var GridTable = require('./gridTable.jsx');
 var GridFilter = require('./gridFilter.jsx');
@@ -153,9 +154,9 @@ var Griddle = createClass({
         };
     },
     propTypes: {
-        isMultipleSelection: React.PropTypes.bool,
-        selectedRowIds: React.PropTypes.oneOfType([React.PropTypes.arrayOf(React.PropTypes.number), React.PropTypes.arrayOf(React.PropTypes.string)]),
-        uniqueIdentifier: React.PropTypes.string
+        isMultipleSelection: PropTypes.bool,
+        selectedRowIds: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.number), PropTypes.arrayOf(PropTypes.string)]),
+        uniqueIdentifier: PropTypes.string
     },
     defaultFilter: function defaultFilter(results, filter) {
         var that = this;
